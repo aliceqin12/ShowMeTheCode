@@ -6,9 +6,9 @@ import html
 
 
 comment = '''
-            学生信息表
-            "id" : [名字, 数学, 语文, 英文]
-        '''
+        学生信息表
+        "id" : [名字, 数学, 语文, 英文]
+'''
 
 def readExcelDataToDict(excelpath):
     wb = load_workbook(filename=excelpath)
@@ -40,7 +40,7 @@ def writeDataToXml(student_dict, xmlpath):
     stu_node.appendChild(dict_node)
 
     with open(xmlpath, "w", encoding='utf8') as file:
-        transform = html.unescape(doc.toprettyxml())
+        transform = html.unescape(doc.toprettyxml(indent=''))
         file.write(transform)
 
 if __name__ == '__main__':
