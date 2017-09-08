@@ -14,7 +14,7 @@ def writeDataToExcel(data):
         for j in range(len(values)):
             ws.cell(row=i, column=j+2).value = values[j]
 
-    wb.save('sample.xlsx')
+    wb.save('student.xlsx')
 
 if __name__ == '__main__':
     with open('student.txt', 'r', encoding='utf-8') as f:
