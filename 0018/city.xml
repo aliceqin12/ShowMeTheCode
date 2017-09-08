@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <root>
-<students>
+<city>
 <!--
             城市信息
 -->
@@ -9,5 +9,5 @@
     "2": "北京",
     "3": "成都"
 }
-</students>
+</city>
 </root>
